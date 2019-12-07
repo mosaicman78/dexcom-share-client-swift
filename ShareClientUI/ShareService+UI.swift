@@ -8,7 +8,7 @@
 import LoopKitUI
 import ShareClient
 
-remove the comment markers on lines 34 and 35 in ShareClientUI/ShareService+UI.swift
+
 extension ShareService: ServiceAuthenticationUI {
     public var credentialFormFields: [ServiceCredential] {
         return [
