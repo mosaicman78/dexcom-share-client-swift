@@ -8,7 +8,7 @@
 import LoopKitUI
 import ShareClient
 
-
+remove the comment markers on lines 34 and 35 in ShareClientUI/ShareService+UI.swift
 extension ShareService: ServiceAuthenticationUI {
     public var credentialFormFields: [ServiceCredential] {
         return [
@@ -31,8 +31,8 @@ extension ShareService: ServiceAuthenticationUI {
                     (title: LocalizedString("Outside US", comment: "Outside US share server option title"),
                      value: KnownShareServers.NON_US.rawValue)
                     // remove the comment markers on lines 34 and 35 to use a custom share server
-                    // ,(title: LocalizedString("Custom", comment: "Custom share server option title"),
-                    //  value: KnownShareServers.CUSTOM.rawValue)
+                     ,(title: LocalizedString("Custom", comment: "My Custom Share Server"),
+                      value: KnownShareServers.CUSTOM.rawValue)
                 ]
             )
         ]
